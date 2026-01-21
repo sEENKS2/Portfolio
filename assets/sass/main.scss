@@ -68,3 +68,78 @@
 	@import 'layout/main';
 	@import 'layout/footer';
 	@import 'layout/wrapper';
+	
+/* --- MODERN TECH OVERRIDES --- */
+
+/* Fondo general de la página */
+body, #wrapper {
+    background-color: #F9FAFB !important;
+}
+
+/* Estilo CARDS para las secciones principales */
+#main > .main {
+    background-color: #FFFFFF !important;
+    margin-bottom: 2em;
+    padding: 3em;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #E5E7EB;
+}
+
+/* --- BOTONES UNIFICADOS (FIX) --- */
+/* Apuntamos a todos los tipos de botones posibles */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button,
+a.button {
+    background-color: #3B82F6 !important; /* Azul Tech */
+    color: #ffffff !important;             /* Texto Blanco Puro OBLIGATORIO */
+    border-radius: 8px !important;
+    box-shadow: none !important;
+    border: none !important;
+    text-shadow: none !important;          /* Eliminamos sombras viejas */
+    font-weight: 600 !important;           /* Texto un poco más grueso para leer mejor */
+    transition: all 0.2s ease-in-out;
+    
+    /* Aseguramos que al pasar el mouse el texto SIGA blanco */
+    &:hover, &:active, &:focus {
+        background-color: #2563EB !important; /* Azul un poco más oscuro */
+        color: #ffffff !important;
+        transform: translateY(-2px);          /* Pequeña elevación */
+    }
+}
+
+/* Limpiar barras decorativas */
+hr {
+    border-bottom-color: #E5E7EB !important;
+}
+
+/* --- CORRECCIÓN DE BORDES Y CARDS --- */
+
+/* 1. Asegurar borde en las Secciones Principales (Sobre mí, Skills, etc) */
+#main > .main {
+    border: 1px solid #D1D5DB !important; /* Un gris un poco más visible */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra un poco más marcada */
+}
+
+/* 2. Estilo específico para las TARJETAS DE PROYECTOS (Las que están dentro de columnas) */
+.col-6 .main.special, 
+.col-12-medium .main.special {
+    background-color: #FFFFFF !important;
+    border: 1px solid #D1D5DB !important; /* El borde que faltaba */
+    border-radius: 12px !important;
+    padding: 2em !important;
+    margin-bottom: 0 !important; /* El margen lo maneja la grilla */
+    height: 100%; /* Para que tengan la misma altura si hay varias */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    /* Efecto al pasar el mouse por el proyecto */
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.1) !important;
+        border-color: #3B82F6 !important; /* El borde se pone azul al hover */
+    }
+}
