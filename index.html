@@ -78,55 +78,98 @@
 							</section>
 
 						<!-- Second Section -->
-							<section id="second" class="main special">
+						<section id="second" class="main special">
 								<header class="major">
 									<h2>Proyectos Destacados</h2>
 									<p>Una selección de sistemas desarrollados integrando análisis de requerimientos,<br />
-									arquitectura de datos y desarrollo backend.</p>
+									arquitectura de datos y desarrollo de software distribuido.</p>
 								</header>
 								
-								<div class="row">
+								<div class="row gtr-uniform">
+									
 									<div class="col-6 col-12-medium">
-										<section class="main special">
+										<section class="main special" style="border: 1px solid rgba(255,255,255,0.1); padding: 2em; rounded-xl: 8px; background: rgba(255,255,255,0.02); height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
 											<header>
 												<span class="icon solid fa-chart-line style1" style="font-size: 2em; color: #10B981;"></span>
-												<h3>Price Tracker Engine</h3>
+												<h3 style="margin-top: 0.5em;">Price Tracker Engine</h3>
 											</header>
-											<p style="text-align: left;">
-												Motor distribuido y full-stack orientado a eventos para el monitoreo automatizado de precios en tiempo real mediante integraciones externas.
+											<p style="text-align: left; font-size: 0.95em;">
+												Motor distribuido full-stack y orientado a eventos para el monitoreo automatizado de precios en tiempo real mediante integraciones externas.
 											</p>
-											<ul style="text-align: left; font-size: 0.9em; color: #666;">
+											<ul style="text-align: left; font-size: 0.85em; color: #aaa; flex-grow: 1; margin-bottom: 1.5em;">
 												<li>✅ <strong>Colas Asíncronas:</strong> Procesamiento resiliente en segundo plano usando <strong>Redis y BullMQ</strong>.</li>
 												<li>✅ <strong>Buscador Inteligente:</strong> UI reactiva con autocompletado en vivo (Debounce) consumiendo la API de Valve de forma dinámica.</li>
 												<li>✅ <strong>Canales Blindados:</strong> Notificaciones a través de la API de <strong>Telegram Bots</strong> forzadas en IPv4 de manera nativa.</li>
 												<li>✅ <strong>Persistencia Relacional:</strong> Almacenamiento e historial analítico en <strong>PostgreSQL</strong> con limpiezas en cascada.</li>
 											</ul>
-											<ul class="actions special">
+											<ul class="actions special" style="margin-bottom: 0;">
 												<li><a href="https://github.com/sEENKS2/price-tracker" class="button small">Ver Código</a></li>
 											</ul>
 										</section>
 									</div>
 
 									<div class="col-6 col-12-medium">
-										<section class="main special">
+										<section class="main special" style="border: 1px solid rgba(255,255,255,0.1); padding: 2em; rounded-xl: 8px; background: rgba(255,255,255,0.02); height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
 											<header>
 												<span class="icon solid fa-cloud-upload-alt style3" style="font-size: 2em; color: #3B82F6;"></span>
-												<h3>CarFix Cloud Migrator</h3>
+												<h3 style="margin-top: 0.5em;">CarFix Cloud Migrator</h3>
 											</header>
-											<p style="text-align: left;">
-												Proyecto de modernización y migración arquitectónica, trasladando un sistema de gestión de escritorio hacia una plataforma web distribuida.
+											<p style="text-align: left; font-size: 0.95em;">
+												Proyecto de modernización y migración arquitectónica, trasladando un sistema de gestión empresarial de escritorio hacia una plataforma web distribuida.
 											</p>
-											<ul style="text-align: left; font-size: 0.9em; color: #666;">
+											<ul style="text-align: left; font-size: 0.85em; color: #aaa; flex-grow: 1; margin-bottom: 1.5em;">
 												<li>✅ <strong>Evolución de Entorno:</strong> Migración estratégica desde un entorno pesado local (.NET Desktop) a la web.</li>
 												<li>✅ <strong>Desacoplamiento:</strong> Reestructuración de monolitos N-Capas hacia APIs REST con arquitectura cliente-servidor clara.</li>
 												<li>✅ <strong>Diseño Moderno:</strong> Interfaces asíncronas con flujos fluidos y dinámicos para el operador del sistema.</li>
-												<li>✅ <strong>Migración de Datos:</strong> Adaptación de esquemas de datos relacionales para entornos Cloud altamente concurrentes.</li>
+												<li>✅ <strong>Migración de Datos:</strong> Adaptación de esquemas de datos relacionales para entornos Cloud concurrentes.</li>
 											</ul>
-											<ul class="actions special">
+											<ul class="actions special" style="margin-bottom: 0;">
 												<li><a href="https://github.com/sEENKS2/CarFix-Diploma" class="button small">Ver Código</a></li>
 											</ul>
 										</section>
 									</div>
+
+									<div class="col-6 col-12-medium">
+										<section class="main special" style="border: 1px solid rgba(255,255,255,0.05); padding: 2em; rounded-xl: 8px; background: rgba(255,255,255,0.01); height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+											<header>
+												<span class="icon solid fa-cogs" style="font-size: 2em; color: #6b7280;"></span>
+												<h3 style="margin-top: 0.5em;">CarFix Desktop (Original)</h3>
+											</header>
+											<p style="text-align: left; font-size: 0.95em;">
+												Aplicación comercial de escritorio desarrollada en <strong>C# y .NET</strong> que sirvió como base funcional para la modernización web.
+											</p>
+											<ul style="text-align: left; font-size: 0.85em; color: #888; flex-grow: 1; margin-bottom: 1.5em;">
+												<li>✅ <strong>Arquitectura N-Capas:</strong> Separación lógica estricta de UI, Negocio y Datos.</li>
+												<li>✅ <strong>Entity Framework Core:</strong> ORM Code-First acoplado a SQL Server relacional.</li>
+												<li>✅ <strong>Seguridad Avanzada:</strong> Control de accesos de usuarios basado en roles (RBAC).</li>
+												<li>✅ <strong>Auditoría Interna:</strong> Tracking completo de operaciones y logs de seguridad del sistema.</li>
+											</ul>
+											<ul class="actions special" style="margin-bottom: 0;">
+												<li><a href="https://github.com/sEENKS2/CarFix-Diploma" class="button small">Ver Código</a></li>
+											</ul>
+										</section>
+									</div>
+
+									<div class="col-6 col-12-medium">
+										<section class="main special" style="border: 1px solid rgba(255,255,255,0.05); padding: 2em; rounded-xl: 8px; background: rgba(255,255,255,0.01); height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+											<header>
+												<span class="icon brands fa-react" style="font-size: 2em; color: #06b6d4;"></span>
+												<h3 style="margin-top: 0.5em;">Roadmap de Cómics</h3>
+											</header>
+											<p style="text-align: left; font-size: 0.95em;">
+												Single Page Application (SPA) responsiva desarrollada con <strong>React 19 y Vite</strong> para la visualización cronológica de contenido.
+											</p>
+											<ul style="text-align: left; font-size: 0.85em; color: #888; flex-grow: 1; margin-bottom: 1.5em;">
+												<li>✅ <strong>Integración de API:</strong> Consumo de datos reales desde Metron API de manera eficiente.</li>
+												<li>✅ <strong>Routing Moderno:</strong> Navegación fluida de rutas dinámicas utilizando React Router v7.</li>
+												<li>✅ <strong>UX Dinámica:</strong> Exploración interactiva de arcos argumentales complejos y líneas temporales.</li>
+											</ul>
+											<ul class="actions special" style="margin-bottom: 0;">
+												<li><a href="https://github.com/sEENKS2/Comic-Reading-Order" class="button small">Ver Código</a> | <a href="https://comic-reading-order.vercel.app/" class="button small">Visitar Sitio</a></li>
+											</ul>
+										</section>
+									</div>
+
 								</div>
 
 								<footer class="major">
@@ -134,34 +177,6 @@
 										<li><a href="https://github.com/sEENKS2" class="button">Ver más en GitHub</a></li>
 									</ul>
 								</footer>
-							</section>
-
-						<!-- Get Started -->
-							<section id="cta" class="main special">
-								<header class="major">
-									<h2>Contacto</h2>
-									<p>Podes hacerlo a traves del formulario o en mis redes, <br />
-									Enviame un mensaje y me pondré en contacto a la brevedad.</p>
-								</header>
-								
-								<form method="post" action="https://formspree.io/f/maqqdrlp" style="text-align: left; max-width: 600px; margin: 0 auto;">
-									<div class="row gtr-uniform">
-										<div class="col-6 col-12-xsmall">
-											<input type="text" name="name" id="name" value="" placeholder="Nombre" required />
-										</div>
-										<div class="col-6 col-12-xsmall">
-											<input type="email" name="email" id="email" value="" placeholder="Email" required />
-										</div>
-										<div class="col-12">
-											<textarea name="message" id="message" placeholder="Escribí tu mensaje aquí..." rows="4" required></textarea>
-										</div>
-										<div class="col-12">
-											<ul class="actions special">
-												<li><input type="submit" value="Enviar Mensaje" class="primary" /></li>
-											</ul>
-										</div>
-									</div>
-								</form>
 							</section>
 
 					</div>
